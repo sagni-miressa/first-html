@@ -3,15 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>Practice Page & Table</title>
+    <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="my.css">
+    
+    <style>
+        /* Table border & spacing */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        /* Fixed cell widths */
+        th, td {
+            width: 120px;
+            text-align: center;
+        }
+
+        /* Space between elements */
+        table {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Card Section -->
     <div class="card">
-        <h1>Who are you</h1>
+        <h1>Who are</h1>
         <p>This is my HTML practice page <strong>hhhh i lough much</strong>.</p>
     </div>
+
+    <!-- Table Section -->
+    <table>
+        <!-- Table Title -->
+        <caption>My Fruit List</caption>
+
+        <!-- Column Headers -->
+        <tr>
+            <th>Item #</th>
+            <th>Fruit</th>
+            <th>Price</th>
+        </tr>
+
+        <!-- Row 1 -->
+        <tr>
+            <td>1</td>
+            <td>Apple</td>
+            <td>$1.50</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td>2</td>
+            <td>Banana</td>
+            <td>$0.75</td>
+        </tr>
+
+        <!-- Footer Row using COLSPAN -->
+        <tr>
+            <td colspan="2"><b>Total Items</b></td>
+            <td><b>2</b></td>
+        </tr>
+    </table>
 
 </body>
 </html>
